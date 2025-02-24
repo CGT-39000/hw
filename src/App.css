@@ -26,6 +26,40 @@
   left: 0;
 }
 
+.email {
+  font-size: 1rem;
+  padding: 1.0rem 1rem 1.0rem;
+  background: rgba(22, 22, 22, 0.7);
+  border-radius: 0.25rem;
+  border-width: 0.0625rem;
+}
+
+.info-center {
+  text-align: center;
+  margin-inline: auto;
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+
+center {
+  margin-inline: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.getstarted {
+  background-color: red;
+  margin: 0rem 0.5rem;
+  padding-block: 1rem;
+  font-weight: 600;
+}
+
 .logo {
   position: absolute;
   top: 1.2rem;
