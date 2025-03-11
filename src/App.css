@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 95vh;
 }
 
 .filter {
@@ -17,7 +18,7 @@
 }
 
 .filter2 {
-  background-image: linear-gradient( 180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0% );
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
   position: absolute;
   width: 100%;
   height: 10rem;
@@ -32,6 +33,19 @@
   background: rgba(22, 22, 22, 0.7);
   border-radius: 0.25rem;
   border-width: 0.0625rem;
+}
+
+.email2 {
+  font-size: 1rem;
+  padding: 1.0rem 1rem 1.0rem;
+  margin-top: 0.2rem;
+  margin-left: 7evw;
+  width: 60%;
+  align-self: center;
+  background: rgba(22, 22, 22, 0.7);
+  border-radius: 0.25rem;
+  border-width: 0.0625rem;
+  position: relative;
 }
 
 .info-center {
@@ -58,6 +72,7 @@ center {
   margin: 0rem 0.5rem;
   padding-block: 1rem;
   font-weight: 600;
+  position: relative;
 }
 
 .logo {
@@ -66,4 +81,106 @@ center {
   left: 8rem;
   width: 9.5%;
 
+}
+
+.rainbow {
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  top: 85vh;
+  width: 250%;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: solid .25rem red;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom: none;
+  background: radial-gradient(50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%), black;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.flexcontainer {
+  margin-top: 100vh;
+  margin-inline: auto;
+  width: 100vw;
+  position: relative;
+  z-index: 10;
+  display: flex;
+}
+
+.infowrapper {
+  width: 75%;
+  align-self: center;
+  margin-inline: auto;
+  position: relative;
+}
+
+.infowrapper2 {
+  width: 75%;
+  align-self: center;
+  margin-inline: auto;
+  position: relative;
+  margin-top: 100vh;
+}
+
+details {
+  background-color: rgb(45, 45, 45);
+  padding: 2rem;
+  border-radius: 0rem;
+  margin: 0.5rem;
+}
+
+/* Remove the default triangle */
+summary {
+  display: block;
+}
+
+/* Create a new custom triangle on the right side */
+summary::after {
+  float: right;
+  margin-top: -1.5rem;
+  display: inline-block;
+  font-size: 3rem;
+  content: '+';
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+.container {
+  width: 60%;
+  position: relative;
+  display: grid;
+  grid-template-areas: "menu menu menu menu";
+  grid-template-columns: repeat(4, 1fr);
+  margin-inline: auto;
+  gap: 5px;
+  color: grey;
+  padding: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.phone {
+  position: relative;
+  margin-left: 14rem;
+}
+
+.container > div > a {
+  color: darkgrey;
+  font-size: 0.8rem;
 }
