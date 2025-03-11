@@ -7,6 +7,10 @@
   height: 95vh;
 }
 
+#root {
+  width: 100vw;
+}
+
 .filter {
   background-image: linear-gradient(7deg, rgba(0, 0, 0, 0.8500) 10.00%, rgba(0, 0, 0, 0.8465) 17.25%, rgba(0, 0, 0, 0.8361) 24.50%, rgba(0, 0, 0, 0.8187) 31.75%, rgba(0, 0, 0, 0.7944) 39.00%, rgba(0, 0, 0, 0.7632) 46.25%, rgba(0, 0, 0, 0.7250) 53.50%, rgba(0, 0, 0, 0.6868) 60.75%, rgba(0, 0, 0, 0.6556) 68.00%, rgba(0, 0, 0, 0.6312) 75.25%, rgba(0, 0, 0, 0.6139) 82.50%, rgba(0, 0, 0, 0.6035) 89.75%, rgba(0, 0, 0, 0.6000) 97.00%);
   position: absolute;
@@ -183,4 +187,23 @@ details[open] > summary::after {
 .container > div > a {
   color: darkgrey;
   font-size: 0.8rem;
+}
+
+.link {
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+  margin-left: 0.5rem;
+  background-color: red;
+  float: right;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+
+.loginform {
+  background-color: #00000088;
+  border-radius: 1rem;
+  width: fit-content;
+  padding: 3rem;
+  margin-inline: auto;
 }
