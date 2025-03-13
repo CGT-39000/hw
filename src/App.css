@@ -79,6 +79,14 @@ center {
   position: relative;
 }
 
+.getstarted:disabled {
+  background-color: darkred;
+  margin: 0rem 0.5rem;
+  padding-block: 1rem;
+  font-weight: 600;
+  position: relative;
+}
+
 .logo {
   position: absolute;
   top: 1.2rem;
