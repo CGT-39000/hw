@@ -1,16 +1,21 @@
+import { useContext } from "react";
+import { LangContext } from "../contexts/LangContext";
+
 const LoginForm = () => {
+  const { lang } = useContext(LangContext);
+
   return (
     <>
       <center className="info-center">
         <form className="loginform">
-          <h1>Sign In</h1>
-          <input className="email" type="email" placeholder="Email adress" />
+          <h1>{lang == "eng" ? "Sign In" : "Iniciar sesión" }</h1>
+          <input className="email" type="email" placeholder="Email" />
           <br />
           <br></br>
-          <input className="email" type="password" placeholder="Password" />
+          <input className="email" type="password" placeholder={lang == "eng" ? "Password" : "Contraseña" } />
           <br />
           <br></br>
-          <button className="getstarted">Sign In</button>
+          <button className="getstarted">{lang == "eng" ? "Sign In" : "Iniciar sesión" }</button>
         </form>
       </center>
     </>
